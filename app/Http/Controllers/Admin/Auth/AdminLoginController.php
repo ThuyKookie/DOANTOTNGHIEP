@@ -28,6 +28,6 @@ class AdminLoginController extends Controller
     public function getLogoutAdmin()
     {
         \Auth::guard('admins')->logout();
-        return redirect()->to('/');
+        return redirect()->to('http://localhost:8000/admin-auth/login');
     }
 }
