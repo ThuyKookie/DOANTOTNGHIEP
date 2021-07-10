@@ -133,13 +133,15 @@
                 <a href="#" class="main-title">SÁCH NỔI BẬT</a>
             </div>
             <div class="bot">
+            <div class="bot js-product-5 owl-carousel owl-tyheme owl-custom">
                 @if (isset($productsHot))
                     @foreach($productsHot as $product)
-                        <div class="item">
+                        <div class="item" style="width: 100%; max-width: 100%;">
                             @include('frontend.components.product_item',['product' => $product])
                         </div>
                     @endforeach
                 @endif
+        </div>
             </div>
         </div>
         <div class="product-two" id="product-recently"></div>
