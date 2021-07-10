@@ -1,6 +1,6 @@
 @if (isset($product))
     <div class="product-item">
-        <a href="{{ route('get.product.detail',$product->pro_slug . '-'.$product->id ) }}" title="" class="avatar image contain">
+        <a href="{{ route('get.product.detail',$product->pro_slug . '-'.$product->id ) }}" title="Sản phẩm" class="avatar image contain">
             <img alt="{{  $product->pro_name }}" data-src="{{ pare_url_file($product->pro_avatar) }}" src="{{  asset('images/preloader.gif') }}" class="lazyload lazy">
         </a>
         <a href="{{ route('get.product.detail',$product->pro_slug . '-'.$product->id ) }}"

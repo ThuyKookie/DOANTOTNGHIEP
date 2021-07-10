@@ -29,7 +29,7 @@
                     <a href="/" title="Home"><span itemprop="title">Trang chủ</span></a>
                 </li>
                 <li >
-                    <a href="{{ route('get.blog.home') }}" title="Đồng hồ chính hãng"><span itemprop="title">Bài viết</span></a>
+                    <a href="{{ route('get.blog.home') }}" title="Tin Tức"><span itemprop="title">Blog</span></a>
                 </li>
                 @if (isset($menu))
                     <li >

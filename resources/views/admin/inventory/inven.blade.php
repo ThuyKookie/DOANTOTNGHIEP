@@ -67,9 +67,9 @@
                     </form>
                 </div>
    
-                <h2>Lọc với số lượng</h2>
+                <!--<h2>Lọc với số lượng</h2>
 
-                <input type="number" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+                <input type="number" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">-->
                 <div class="box-body">
                    <div class="col-md-12">
                         <table class="table"  id="myTable">

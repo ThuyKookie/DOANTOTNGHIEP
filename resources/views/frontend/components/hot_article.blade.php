@@ -6,7 +6,7 @@
                 <img data-src="" class="lazyload" alt="" src="{{ url('images/banner/dongho.jpg') }}">
             </a>
         </div>
-        <a href="" title="" class="top__title">DDây là tiêu đề bài viết</a>
+        <a href="" title="" class="top__title">Đây là tiêu đề bài viết</a>
     </div> --}}
     <div class="bot">
         @foreach($articles as $article)

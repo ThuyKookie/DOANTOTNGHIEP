@@ -50,9 +50,9 @@
                                             </td>
                                             <td>
                                                 @if ($category->c_hot == 1)
-                                                    <a href="{{ route('admin.category.hot', $category->id) }}" class="label label-info">Mặc định</a>
+                                                    <a href="{{ route('admin.category.hot', $category->id) }}" class="label label-info">Nổi bật</a>
                                                 @else
-                                                    <a href="{{ route('admin.category.hot', $category->id) }}" class="label label-default">Nổi bật</a>
+                                                    <a href="{{ route('admin.category.hot', $category->id) }}" class="label label-default">Không</a>
                                                 @endif
                                             </td>
                                             <td>{{  $category->created_at }}</td>

@@ -168,6 +168,8 @@
                     <h4 class="modal-title"> Chi tiết đơn hàng [ ID Đơn Hàng : <b id="idTransaction"></b>]</h4>
                 </div>
                 <div class="modal-body">
+                <div class="box">
+                </div>
                     <div class="content">
                          
                     </div>

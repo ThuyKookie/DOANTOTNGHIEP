@@ -48,7 +48,7 @@
         {{-- <div class="logo-partner">
             @for($i = 0; $i < 6; $i++)
                 <div class="item">
-                    <a href="#" title="Đồng hồ Atlantic Swiss">
+                    <a href="#" title="Atlantic Swiss">
                         <img class="lazyload" src="https://www.dangquangwatch.vn/view/Pic/Jacques.jpg" data-src="" alt="Atlantic Swiss" />
                     </a>
                 </div>

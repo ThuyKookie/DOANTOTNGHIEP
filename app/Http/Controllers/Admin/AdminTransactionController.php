@@ -193,9 +193,10 @@ class AdminTransactionController extends Controller
     {
 
         if ($request->ajax()) {
-            $orders = Order::with('product:id,pro_name,pro_slug,pro_avatar')->where('od_transaction_id', $id)
-                ->get();
-
+            $orders = Order::join('transactions', 'orders.od_transaction_id', '=', 'transactions.id')
+            ->where('od_transaction_id', $id)
+            ->select('orders.*', 'transactions.*')
+            ->get();
             $html = view("components.orders", compact('orders'))->render();
             
             return response([

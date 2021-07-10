@@ -1,5 +1,13 @@
 
 <table class="table table-condensed">
+    <b>Nhà sách Nga Tú</b>
+    <p>Địa chỉ: 121 Ngô Quyền - P.Ngô Quyền - TP.Vĩnh yên - Vĩnh Phúc</p>
+                    <p>Điện thoại: 0919.996.386 - 0913.555.368</p>
+                    <p>Khách hàng: <b>{{$orders[0]->tst_name }}</b></p>
+                    <p>SĐT: <b>{{$orders[0]->tst_phone }}</b></p>
+                    <p>Địa chỉ: <b>{{ $orders[0]->tst_address }}</b></p>
+                    <p>Ghi chú: <b>{{$orders[0]->tst_note}}</b></p>
+                    <p>Ngày mua hàng: {{  $orders[0]->created_at }}</p>
     <tbody>
         <tr>
             <th style="width: 10px">Stt</th>
