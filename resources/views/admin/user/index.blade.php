@@ -21,10 +21,10 @@
                                 <tr>
                                     <th style="width: 10px">Stt</th>
                                     <th style="width: 10px">ID</th>
-                                    <th>Name</th>
+                                    <th>Tên khách hàng</th>
                                     <th>Email</th>
-                                    <th>Phone</th>
-                                    <th>Time</th>
+                                    <th>Số điện thoại</th>
+                                    <th>Ngày</th>
                                     <th>Action</th>
                                 </tr>
                                 @if (isset($users))

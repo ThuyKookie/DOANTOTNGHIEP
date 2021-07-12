@@ -7,21 +7,21 @@
                 <h3 class="box-title">Thông tin cơ bản</h3>
             </div>
             <div class="box-body">
-                <div class="form-group "> 
-                    <label for="exampleInputEmail1">Name</label> 
+                <div class="form-group {{ $errors->first('a_name') ? 'has-error' : '' }}"> 
+                    <label for="exampleInputEmail1">Tên bài viết<span class="text-danger">(*)</span></label> 
                     <input type="text" class="form-control" name="a_name" placeholder="" autocomplete="off" value="{{  $article->a_name ?? old('a_name') }}"> 
                     @if ($errors->first('a_name'))
                         <span class="text-danger">{{ $errors->first('a_name') }}</span>
                     @endif
                 </div>
                 <div class="row">
-                    <div class="col-sm-3">
+                    <!--<div class="col-sm-3">
                         <div class="checkbox">
                             <label>
                                 <input type="checkbox" name="a_position_1" {{ $article->a_position_1 ?? 0 == 1 ? "checked" : "" }} value="1">  Trung tâm
                             </label>
                          </div>
-                    </div>
+                    </div>-->
                     <div class="col-sm-3">
                         <div class="checkbox">
                             <label>
@@ -31,14 +31,14 @@
                     </div>
                 </div>
                  <div class="form-group "> 
-                    <label for="exampleInputEmail1">Description</label> 
+                    <label for="exampleInputEmail1">Mô tả</label> 
                     <textarea name="a_description" class="form-control" cols="5" rows="2" autocomplete="off">{{  $article->a_description ?? old('a_description') }}</textarea> 
                     @if ($errors->first('a_description'))
                         <span class="text-danger">{{ $errors->first('a_description') }}</span>
                     @endif
                 </div> 
-                <div class="form-group ">
-                    <label class="control-label">Danh mục <b class="col-red">(*)</b></label> 
+                <div class="form-group {{ $errors->first('a_menu_id') ? 'has-error' : '' }} ">
+                    <label class="control-label">Danh mục<span class="text-danger">(*)</span></label> 
                     <select name="a_menu_id" class="form-control ">
                         <option value="">__Click__</option>
                         @foreach($menus as $menu)
@@ -61,7 +61,7 @@
             </div>
             <div class="box-body">
                 <div class="form-group ">
-                    <label for="exampleInputEmail1">Content</label> 
+                    <label for="exampleInputEmail1"></label> 
                     <textarea name="a_content" id="content" class="form-control textarea" cols="5" rows="2" >{{ $article->a_content ?? '' }}</textarea>
                     @if ($errors->first('a_content'))
                         <span class="text-danger">{{ $errors->first('a_content') }}</span>

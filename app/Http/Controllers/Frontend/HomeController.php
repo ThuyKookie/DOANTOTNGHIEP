@@ -29,7 +29,6 @@ class HomeController extends FrontendController
                 'pro_hot'    => 1
             ])
             ->orderByDesc('id')
-            ->limit(5)
             ->select('id','pro_name','pro_slug','pro_sale','pro_avatar','pro_price','pro_review_total','pro_review_star')
             ->get();
 

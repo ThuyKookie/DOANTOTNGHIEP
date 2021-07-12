@@ -32,9 +32,9 @@
                                     <img src="{{ pare_url_file($item->pro_avatar) }}" style="width: 80px;height: 100px">
                                 </th>
                                 <th>{{ number_format($item->pro_price,0,',','.') }} đ</th>
-                                <th>
-                                    <a class="btn btn-light" href="{{  route('get.user.favourite.delete', $item->id) }}">Huỷ bỏ</a>
-                                </th>
+                                <td style="text-align: center;">
+                                    <a href="{{  route('get.user.favourite.delete', $item->id) }}" class="btn btn-xs label-danger js-delete-confirm"><i class="fa fa-trash"></i> Delete</a>
+                                </td>
                             </tr>
                         @endforeach
                     </tbody>

@@ -18,7 +18,7 @@
                          @csrf
                         <div class="col-sm-8">
                             <div class="form-group {{ $errors->first('sl_name') ? 'has-error' : '' }}">
-                                <label for="name">Name <span class="text-danger">(*)</span></label>
+                                <label for="name">Tên nhà cung cấp<span class="text-danger">(*)</span></label>
                                 <input type="text" class="form-control" value="{{ $supplier->sl_name }}" name="sl_name"  placeholder="Name ...">
                                 @if ($errors->first('sl_name'))
                                     <span class="text-danger">{{ $errors->first('sl_name') }}</span>
@@ -27,7 +27,7 @@
                         </div>
                         <div class="col-sm-8">
                             <div class="form-group {{ $errors->first('sl_phone') ? 'has-error' : '' }}">
-                                <label for="name">Phone <span class="text-danger">(*)</span></label>
+                                <label for="name">Số điện thoại<span class="text-danger">(*)</span></label>
                                 <input type="number" class="form-control" value="{{  $supplier->sl_phone }}"  name="sl_phone"  placeholder="Phone ...">
                                 @if ($errors->first('sl_phone'))
                                     <span class="text-danger">{{ $errors->first('sl_phone') }}</span>
@@ -46,7 +46,7 @@
 
                         <div class="col-sm-8">
                             <div class="form-group {{ $errors->first('sl_address') ? 'has-error' : '' }}">
-                                <label for="name">Address <span class="text-danger">(*)</span></label>
+                                <label for="name">Địa chỉ<span class="text-danger">(*)</span></label>
                                 <input type="text" class="form-control" value="{{ $supplier->sl_address }}" name="sl_address"  placeholder="Address">
                                 @if ($errors->first('sl_address'))
                                     <span class="text-danger">{{ $errors->first('sl_address') }}</span>

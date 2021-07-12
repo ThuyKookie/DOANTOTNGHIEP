@@ -24,10 +24,10 @@
                                 <tr>
                                     <th style="width: 10px">STT</th>
                                     <th style="width: 10px">ID</th>
-                                    <th>Name</th>
+                                    <th>Tên nhà cung cấp</th>
                                     <th>Email</th>
-                                    <th>SDT</th>
-                                    <th>Time</th>
+                                    <th>Số điện thoại</th>
+                                    <th>Ngày tạo</th>
                                     <th>Action</th>
                                 </tr>
                             </tbody>

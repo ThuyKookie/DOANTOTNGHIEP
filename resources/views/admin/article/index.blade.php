@@ -24,12 +24,12 @@
                                 <tr>
                                     <th style="width: 10px">STT</th>
                                     <th style="width: 10px">ID</th>
-                                    <th style="width: 25%">Name</th>
-                                    <th>Category</th>
-                                    <th>Avatar</th>
-                                    <th>Hot</th>
-                                    <th>Status</th>
-                                    <th>Time</th>
+                                    <th style="width: 25%">Tên bài viết</th>
+                                    <th>Danh mục</th>
+                                    <th>Ảnh bài viết</th>
+                                    <th>Nổi bật</th>
+                                    <th>Trạng thái</th>
+                                    <th>Ngày tạo</th>
                                     <th>Action</th>
                                 </tr>
 

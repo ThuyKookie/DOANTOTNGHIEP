@@ -37,7 +37,7 @@
             <a type="button" href="http://127.0.0.1:8000/api-admin/statistical" class="btn btn-success align-self-center">Thống kê tất cả</a>
             </div>
         </div> -->
-        <div class="col-md-2 mt-3" ></div>
+       <!-- <div class="col-md-2 mt-3" ></div>
         <div class="col-md-2 mt-3" >
         <form action="{{  route('admin.statistical.exportDoanhThu') }}" method="post">
             @csrf
@@ -45,10 +45,10 @@
             <input type="date" class="form-control" id="datatime2a" name="datatime2a">
             <button type="submit" class="btn btn-info align-self-center">Xuất B.Cáo Doanh Thu</button>
         </form>
-            <!-- <div style="height: 50px; margin: 25px;" >
+            <div style="height: 50px; margin: 25px;" >
             <a href="{{  route('admin.inventory.exportInven') }}" class="btn btn-primary align-self-center">Xuất Báo Cáo</a>
-            </div> -->
-        </div>
+            </div> 
+        </div>-->
     </div>
     <div class="justify-content-center"><h3>{{$dt}}</h3></div>
    
@@ -59,7 +59,7 @@
                     <span class="info-box-icon bg-aqua"><i class="ion ion-ios-cart-outline"></i></span>
                     <div class="info-box-content">
                         <span class="info-box-text">Tổng số đơn hàng</span>
-                        <span class="info-box-number">{{  $totalTransactions }}<small><a href="{{  route('admin.transaction.index') }}">(Chi tiết)</a></small></span>
+                        <span class="info-box-number">{{  $totalTransactions }}</span>
                     </div>
                     <!-- /.info-box-content -->
                 </div>
@@ -71,7 +71,7 @@
                     <span class="info-box-icon bg-red"><i class="ion ion-ios-people-outline"></i></span>
                     <div class="info-box-content">
                         <span class="info-box-text">Thành viên</span>
-                        <span class="info-box-number">{{ $totalUsers }} <small><a href="{{ route('admin.user.index') }}">(Chi tiết)</a></small></span>
+                        <span class="info-box-number">{{ $totalUsers }} <!--<small><a href="{{ route('admin.user.index') }}">(Chi tiết)</a></small>--></span>
                     </div>
                     <!-- /.info-box-content -->
                 </div>
@@ -85,7 +85,7 @@
                     <span class="info-box-icon bg-green"><i class="ion ion-ios-gear-outline"></i></span>
                     <div class="info-box-content">
                         <span class="info-box-text">Sản phẩm</span>
-                        <span class="info-box-number">{{  $totalProducts }} <small><a href="{{ route('admin.product.index') }}">(Chi tiết)</a></small></span>
+                        <span class="info-box-number">{{  $totalProducts }} <!--<small><a href="{{ route('admin.product.index') }}">(Chi tiết)</a></small>--></span>
                     </div>
                     <!-- /.info-box-content -->
                 </div>
@@ -97,7 +97,7 @@
                     <span class="info-box-icon bg-yellow"><i class="fa fa-google-plus"></i></span>
                     <div class="info-box-content">
                         <span class="info-box-text">Đánh giá</span>
-                        <span class="info-box-number">{{ $totalRatings }} <small><a href="{{ route('admin.rating.index') }}">(Chi tiết)</a></small></span>
+                        <span class="info-box-number">{{ $totalRatings }} </span>
                     </div>
                     <!-- /.info-box-content -->
                 </div>
@@ -250,10 +250,10 @@
                             <thead>
                                 <tr>
                                     <th>ID</th>
-                                    <th>Info</th>
-                                    <th>Money</th>
-                                    <th>Status</th>
-                                    <th>Time</th>
+                                    <th>Thông tin</th>
+                                    <th>Tổng tiền</th>
+                                    <th>Trạng thái</th>
+                                    <th>Ngày mua</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -262,9 +262,9 @@
                                         <td>{{ $transaction->id }}</td>
                                         <td>
                                             <ul>
-                                                <li>Name: {{ $transaction->tst_name }}</li>
+                                                <li>Tên: {{ $transaction->tst_name }}</li>
                                                 <li>Email: {{ $transaction->tst_email }}</li>
-                                                <li>Phone: {{ $transaction->tst_phone }}</li>
+                                                <li>Số điện thoại: {{ $transaction->tst_phone }}</li>
                                             </ul>
                                         </td>
                                         <td>{{ number_format($transaction->tst_total_money,0,',','.') }} đ</td>
@@ -296,7 +296,7 @@
             </div>
             <!-- /.box -->
             <!-- TABLE: LATEST ORDERS -->
-          <div class="box box-info">
+          <!--<div class="box box-info">
                 <div class="box-header with-border">
                     <h3 class="box-title">Top sản phẩm bán trong tháng</h3>
                     <div class="box-tools pull-right">
@@ -305,7 +305,7 @@
                         <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
                     </div>
                 </div>
-               <!-- /.box-header -->
+               <!-- /.box-header 
                 <div class="box-body">
                     <div class="table-responsive">
                         <table class="table no-margin">
@@ -334,15 +334,15 @@
                             </tbody>
                         </table>
                     </div>
-                   <!-- /.table-responsive -->
+                   <!-- /.table-responsive 
                 </div>
-                <!-- /.box-body -->
+                <!-- /.box-body -
                 <div class="box-footer clearfix">
                     <a href="{{ route('admin.product.index') }}" class="btn btn-sm btn-info btn-flat pull-right">Danh sách sản phẩm</a>
                 </div>
-                <!-- /.box-footer -->
+                <!-- /.box-footer --
             </div>
-           <!-- /.box -->
+           <!-- /.box --
         </div>
        <!-- /.col --
         <div class="col-md-4">
@@ -379,7 +379,7 @@
                 <div class="box-footer text-center">
                     <a href="javascript:void(0)" class="uppercase">View All Products</a>
                 </div>
-                <!-- /.box-footer -->
+                <!-- /.box-footer --
             </div>
             <!-- /.box -->
             <!-- PRODUCT LIST --

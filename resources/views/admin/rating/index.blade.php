@@ -29,10 +29,10 @@
                                 <tr>
                                     <th style="width: 10px">STT</th>
                                     <th style="width: 10px">ID</th>
-                                    <th>Name</th>
-                                    <th> User </th>
-                                    <th>Rating</th>
-                                    <th>Time</th>
+                                    <th>Tên sản phẩm</th>
+                                    <th> Khách hàng </th>
+                                    <th>Đánh giá</th>
+                                    <th>Ngày </th>
                                     <th>Action</th>
                                 </tr>
                                 @if (isset($ratings))

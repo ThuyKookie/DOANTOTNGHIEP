@@ -24,10 +24,10 @@
                                 <tr>
                                     <th style="width: 10px">STT</th>
                                     <th style="width: 10px">ID</th>
-                                    <th>Name</th>
-                                    <th>Type</th>
-                                    <th>Category</th>
-                                    <th>Time</th>
+                                    <th>Tên thuộc tính</th>
+                                    <th>Nhóm thuộc tính</th>
+                                    <th>Danh mục sản phẩm</th>
+                                    <th>Ngày tạo</th>
                                     <th>Action</th>
                                 </tr>
                                 @if (isset($attibutes))

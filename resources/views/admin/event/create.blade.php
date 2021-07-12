@@ -21,7 +21,7 @@
                                 @endif
                             </div>
                         </div>
-                        <div class="col-sm-8">
+                        <!--<div class="col-sm-8">
                             <div class="form-group {{ $errors->first('e_link') ? 'has-error' : '' }}">
                                 <label for="name">Link <span class="text-danger">(*)</span></label>
                                 <input type="text" class="form-control" name="e_link"  placeholder="Link ...">
@@ -29,7 +29,7 @@
                                     <span class="text-danger">{{ $errors->first('e_link') }}</span>
                                 @endif
                             </div>
-                        </div>
+                        </div>-->
                         <div class="col-sm-12">
                             <div class="row">
                                 <div class="col-sm-2">
@@ -50,17 +50,11 @@
                                         <input type="checkbox" name="e_position_3" value="1">
                                     </div>
                                 </div>
-                                <div class="col-sm-2">
-                                    <div class="form-group ">
-                                        <label for="name">Home 4 </label>
-                                        <input type="checkbox" name="e_position_4" value="1">
-                                    </div>
-                                </div>
                             </div>
                         </div>
                         <div class="col-sm-8">
                             
-                            <h3 class="box-title">Banner</h3>
+                            <h3 class="box-title">Ảnh sự kiện</h3>
                             <div class="box-body block-images">
                                 <div style="margin-bottom: 10px"> <img src="/images/no-image.jpg" onerror="this.onerror=null;this.src='/images/no-image.jpg';" alt="" class="img-thumbnail" style="width: 100%;height: 250px;"> </div>
                                 <div style="position:relative;"> <a class="btn btn-primary" href="javascript:;"> Choose File... <input type="file" style="position:absolute;z-index:2;top:0;left:0;filter: alpha(opacity=0);-ms-filter:&quot;progid:DXImageTransform.Microsoft.Alpha(Opacity=0)&quot;;opacity:0;background-color:transparent;color:transparent;" name="e_banner" size="40" class="js-upload"> </a> &nbsp; <span class="label label-info" id="upload-file-info"></span> </div>

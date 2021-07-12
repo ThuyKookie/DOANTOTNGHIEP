@@ -56,8 +56,9 @@ class AdminStatisticalController extends Controller
 
         // Danh sách đơn hàng mới
         $transactions = Transaction::orderByDesc('id')->whereBetween('created_at',[$day1,$day2])
-                        ->limit(10)
-                        ->get();
+                        ->limit(20)
+                        ->get();    
+                                
 
         // Doanh thu tinh tu ngay den ngay
 		$totalMoney2Day = Transaction::whereBetween('created_at',[$day1,$day2])
@@ -70,7 +71,7 @@ class AdminStatisticalController extends Controller
             ->whereBetween('created_at',[$day1,$day2])
             ->select(\DB::raw('sum(tst_total_money) as totalMoney'), \DB::raw('DATE(created_at) day'))
             ->groupBy('day')
-            ->limit(10)
+            ->limit(20)
             ->get();
         
         

@@ -78,12 +78,12 @@
                                 <tr>
                                     <th style="width: 10px">STT</th>
                                     <th style="width: 10px">ID</th>
-                                    <th style="width: 30%">Info</th>
-                                    <th>Money</th>
+                                    <th style="width: 30%">Thông tin</th>
+                                    <th>Tổng tiền</th>
                                   <!--  <th>Account</th>-->
-                                    <th>Status</th>
-                                    <th>Time</th>
-                                    <th>Note</td>
+                                    <th>Trạng thái</th>
+                                    <th>Ngày</th>
+                                    <th>Ghi chú</td>
                                     <th>Action</th>
                                 </tr>
                                 @if (isset($transactions))
@@ -93,10 +93,10 @@
                                             <td>{{ $transaction->id }}</td>
                                             <td>
                                                 <ul>
-                                                    <li>Name: {{ $transaction->tst_name }}</li>
+                                                    <li>Tên: {{ $transaction->tst_name }}</li>
                                                     <li>Email: {{ $transaction->tst_email }}</li>
-                                                    <li>Phone: {{ $transaction->tst_phone }}</li>
-                                                    <li>Addres: {{ $transaction->tst_address }}</li>
+                                                    <li>SĐT: {{ $transaction->tst_phone }}</li>
+                                                    <li>Địa chỉ: {{ $transaction->tst_address }}</li>
                                                 </ul>
                                             </td>
                                             <td>{{ number_format($transaction->tst_total_money,0,',','.') }} đ</td>

@@ -24,11 +24,11 @@
                                 <tr>
                                     <th style="width: 10px">STT</th>
                                     <th style="width: 10px">ID</th>
-                                    <th>Name</th>
+                                    <th>Tên</th>
                                     <th>Email</th>
-                                    <th>SDT</th>
-                                    <th>Level</th>
-                                    <th>Time</th> 
+                                    <th>SĐT</th>
+                                    <th>Chức vụ</th>
+                                    <th>Ngày tạo</th> 
                                     <th>Action</th>
                                 </tr>
                             </tbody>
@@ -42,7 +42,7 @@
                                             <td>{{ $admin->phone }}</td>
                                             <td>
                                                 @if ($admin->level == 1)
-                                                    <span class="label label-success"> Admin </span>
+                                                    <span class="label label-success"> Quản lý </span>
                                                 @else 
                                                     <span class="label label-default">Nhân viên</span>
                                                 @endif

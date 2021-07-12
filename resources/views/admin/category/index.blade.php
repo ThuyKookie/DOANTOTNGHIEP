@@ -24,11 +24,11 @@
                                 <tr>
                                     <th style="width: 10px">STT</th>
                                     <th style="width: 10px">ID</th>
-                                    <th>Name</th>
-                                    <th>Avatar</th>
-                                    <th>Status</th>
-                                    <th>Hot</th>
-                                    <th>Time</th>
+                                    <th>Tên danh mục</th>
+                                    <th>Ảnh danh mục</th>
+                                    <th>Trạng thái</th>
+                                    <th>Nổi bật</th>
+                                    <th>Ngày tạo</th>
                                     <th>Action</th>
                                 </tr>
                                 @if ($categories)

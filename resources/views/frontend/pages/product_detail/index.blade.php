@@ -56,7 +56,7 @@
                                     </p>
                                 @endif
                                 <p>
-                                    <span>View :&nbsp</span>
+                                    <span>Lượt mua :&nbsp</span>
                                     <span>{{ $product->pro_view }}</span>
                                 </p>
                             </div>
@@ -64,13 +64,12 @@
                                 <a href="{{ route('get.shopping.add', $product->id) }}" title=""
                                    onclick="add_cart_detail('17617',0);" class="muangay">
                                     <span>Mua ngay</span>
-                                    <span>Hotline: 1800.6005</span>
                                 </a>
                                 <a href="{{ route('ajax_get.user.add_favourite', $product->id) }}"
                                    title="Thêm sản phẩm yêu thích"
                                    class="muatragop  {{ !\Auth::id() ? 'js-show-login' : 'js-add-favourite' }}">
                                     <span>Yêu thích</span>
-                                    <span>Sản phẩm</span>
+                                   
                                 </a>
                             </div>
                             <div class="infomation">

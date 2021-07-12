@@ -39,13 +39,13 @@
                                 <tr>
                                     <th style="width: 10px">STT</th>
                                     <th style="width: 10px">ID</th>
-                                    <th>Name</th>
-                                    <th>Category</th>
-                                    <th>Avatar</th>
-                                    <th>Price</th>
-                                    <th>Hot</th>
-                                    <th>Status</th>
-                                    <th>Time</th>
+                                    <th>Tên sản phẩm</th>
+                                    <th>Danh mục</th>
+                                    <th>Ảnh </th>
+                                    <th>Giá </th>
+                                    <th>Nổi bật</th>
+                                    <th>Trạng thái</th>
+                                    <th>Ngày tạo</th>
                                     <th>Action</th>
                                 </tr>
                                 

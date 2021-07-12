@@ -10,12 +10,12 @@
                     <p>Ngày mua hàng: {{  $orders[0]->created_at }}</p>
     <tbody>
         <tr>
-            <th style="width: 10px">Stt</th>
-            <th>Name</th>
-            <th>Avatar</th>
-            <th>Price</th>
-            <th>Number</th>
-            <th>Total</th>
+            <th style="width: 10px">STT</th>
+            <th>Tên sản phẩm</th>
+            <th>Ảnh</th>
+            <th>Giá</th>
+            <th>Số lượng</th>
+            <th>Tổng tiền</th>
         </tr>
         @php $stt = 0;  @endphp
         @foreach($orders as $item)

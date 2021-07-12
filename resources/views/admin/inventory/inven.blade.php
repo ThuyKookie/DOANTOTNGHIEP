@@ -77,12 +77,12 @@
                                 <tr>
                                     <th style="width: 10px">STT</th>
                                     <th style="width: 10px">ID</th>
-                                    <th>Name</th>
-                                    <th>Category</th>
-                                    <th>Avatar</th>
-                                    <th>price</th>
-                                    <th>Number</th>
-                                    <th>Time</th>
+                                    <th>Tên sản phẩm</th>
+                                    <th>Danh mục</th>
+                                    <th>Ảnh</th>
+                                    <th>Giá</th>
+                                    <th>Số lượng</th>
+                                   <!-- <th>Time</th>-->
                                     <th>Action</th>
                                 </tr>
                                 
@@ -126,7 +126,7 @@
                                            <td>
                                            {{ $product->pro_number }}
                                            </td>
-                                            <td>{{  $product->created_at }}</td>
+                                            <!--<td>{{  $product->created_at }}</td>-->
                                             <td>
                                                 <a href="{{ route('admin.product.update', $product->id) }}" class="btn btn-xs btn-primary"><i class="fa fa-pencil"></i> Edit</a>
                                                 <a href="{{  route('admin.product.delete', $product->id) }}" class="btn btn-xs btn-danger js-delete-confirm"><i class="fa fa-trash"></i> Delete</a>

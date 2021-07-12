@@ -19,7 +19,7 @@
                          @csrf
                         <div class="col-sm-8">
                             <div class="form-group {{ $errors->first('c_name') ? 'has-error' : '' }}">
-                                <label for="name">Name <span class="text-danger">(*)</span></label>
+                                <label for="name">Tên danh mục <span class="text-danger">(*)</span></label>
                                 <input type="text" class="form-control" name="c_name"  placeholder="Name ...">
                                 @if ($errors->first('c_name'))
                                     <span class="text-danger">{{ $errors->first('c_name') }}</span>
@@ -28,7 +28,7 @@
                         </div>
                         <div class="col-sm-8">
                             <div class="form-group">
-                                <label for="name">Parent <span class="text-danger">(*)</span></label>
+                                <label for="name">Danh mục cha</label>
                                 <select name="c_parent_id" class="form-control" id="">
                                     <option value="0">__ROOT__</option>
                                     @foreach($categories as $category)

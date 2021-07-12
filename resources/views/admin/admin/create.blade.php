@@ -18,7 +18,7 @@
                          @csrf
                         <div class="col-sm-8">
                             <div class="form-group {{ $errors->first('name') ? 'has-error' : '' }}">
-                                <label for="name">Name <span class="text-danger">(*)</span></label>
+                                <label for="name">Tên<span class="text-danger">(*)</span></label>
                                 <input type="text" class="form-control" value="{{ old('name') }}" name="name"  placeholder="Name ...">
                                 @if ($errors->first('name'))
                                     <span class="text-danger">{{ $errors->first('name') }}</span>
@@ -27,7 +27,7 @@
                         </div>
                         <div class="col-sm-8">
                             <div class="form-group {{ $errors->first('phone') ? 'has-error' : '' }}">
-                                <label for="name">Phone <span class="text-danger">(*)</span></label>
+                                <label for="name">Số điện thoại<span class="text-danger">(*)</span></label>
                                 <input type="number" class="form-control" value="{{ old('phone') }}"  name="phone"  placeholder="Phone ...">
                                 @if ($errors->first('phone'))
                                     <span class="text-danger">{{ $errors->first('phone') }}</span>
@@ -47,7 +47,7 @@
                             <div class="form-group ">
                                 <label for="name">Chức vụ <span class="text-danger">(*)</span></label>
                                 <select class="form-control" name="level">
-                                    <option value="1">Admin</option>
+                                    <option value="1">Quản lý</option>
                                     <option value="2">Nhân viên</option>
                                 </select>
                             </div>

@@ -6,8 +6,8 @@
                 <h3 class="box-title">Thông tin cơ bản</h3>
             </div>
             <div class="box-body">
-                <div class="form-group ">
-                    <label for="exampleInputEmail1">Name</label>
+                <div class="form-group {{ $errors->first('pro_name') ? 'has-error' : '' }} ">
+                    <label for="exampleInputEmail1">Tên sản phẩm <span class="text-danger">(*)</span></label>
                     <input type="text" class="form-control" name="pro_name" required placeholder="Sản phẩm ...." autocomplete="off" value="{{  $product->pro_name ?? old('pro_name') }}">
                     @if ($errors->first('pro_name'))
                         <span class="text-danger">{{ $errors->first('pro_name') }}</span>
@@ -15,9 +15,9 @@
                 </div>
                 <div class="row">
                     <div class="col-sm-3">
-                        <div class="form-group">
-                            <label for="exampleInputEmail1">Giá sản phẩm</label>
-                             <input type="text" name="pro_price" required value="{{  $product->pro_price ?? old('pro_price',0) }}" class="form-control" data-type="currency" placeholder="15.000.000">
+                        <div class="form-group {{$errors->first('pro_price') ? 'has-error' : '' }}">
+                            <label for="exampleInputEmail1">Giá sản phẩm <span class="text-danger">(*)</span></label>
+                             <input type="text" name="pro_price" required placeholder="{{  $product->pro_price ?? old('pro_price',0) }}" class="form-control" data-type="currency" placeholder="15.000.000">
                              @if ($errors->first('pro_price'))
                                 <span class="text-danger">{{ $errors->first('pro_price') }}</span>
                             @endif
@@ -30,9 +30,9 @@
                         </div>
                     </div>
                     <div class="col-sm-3">
-                        <div class="form-group">
-                            <label for="exampleInputEmail1">Số lượng</label>
-                            <input type="number" name="pro_number" value="{{  $product->pro_number ?? old('pro_number',0) }}" class="form-control"  placeholder="5">
+                        <div class="form-group {{$errors->first('pro_number') ? 'has-error' : '' }} ">
+                            <label for="exampleInputEmail1">Số lượng <span class="text-danger">(*)</span></label>
+                            <input type="number" name="pro_number" required placeholder="{{  $product->pro_number ?? old('pro_number',0) }}" class="form-control"  placeholder="5">
                         </div>
                     </div>
                    <!-- <div class="col-sm-3">
@@ -65,9 +65,9 @@
                     @endif
                 </div> --}}
 
-                <div class="form-group ">
-                    <label class="control-label">Danh mục <b class="col-red">(*)</b></label>
-                    <select name="pro_category_id" class="form-control ">
+                <div class="form-group {{$errors->first('pro_category_id') ? 'has-error' : '' }} ">
+                    <label class="control-label">Danh mục<span class="text-danger">(*)</span></label>
+                    <select required placeholder="pro_category_id" class="form-control ">
                         <option value="">__Click__</option>
                         @foreach($categories as $category)
                             <option value="{{ $category->id }}" {{ ($product->pro_category_id ?? '') == $category->id ? "selected='selected'" : "" }}>
@@ -81,7 +81,7 @@
                 </div>
 
                 <div class="form-group ">
-                    <label class="control-label">Nhà cung cấp <b class="col-red">(*)</b></label>
+                    <label class="control-label">Nhà cung cấp </label>
                     <select name="pro_supplier_id" class="form-control ">
                         <option value="">__Click__</option>
                         @foreach($supplier as $item)
@@ -98,7 +98,7 @@
         </div>
         <div class="box box-warning">
             <div class="box-header with-border">
-                <h3 class="box-title">Thuộc tính</h3>
+                <h3 class="box-title">Thuộc tính <span class="text-danger">(*)</span></h3>
             </div>
             <div class="box-body">
                 @foreach($attributes  as $key => $attribute)
@@ -108,7 +108,7 @@
                         <div class="checkbox">
                             <label>
                                 <input type="checkbox" name="attribute[]" {{ in_array($item['id'], $attributeOld ) ? "checked"  : '' }}
-                                value="{{ $item['id'] }}"> {{ $item['atb_name'] }}
+                                 value="{{ $item['id'] }}"> {{ $item['atb_name'] }}
                             </label>
                          </div>
                          @endforeach
@@ -153,12 +153,12 @@
             </div>
         </div>
         <div class="box box-warning">
-            <div class="box-header with-border">
-                <h3 class="box-title">Nội dung</h3>
+            <div class="box-header with-border {{$errors->first('pro_content') ? 'has-error' : '' }}">
+                <h3 class="box-title">Nội dung <span class="text-danger">(*)</span></h3>
             </div>
             <div class="box-body">
                 <div class="form-group ">
-                    <label for="exampleInputEmail1">Content</label>
+                    <label for="exampleInputEmail1"></label>
                     <textarea name="pro_content" id="content" required class="form-control textarea" cols="25" rows="17" >{{ $product->pro_content ?? '' }}</textarea>
                     @if ($errors->first('pro_content'))
                         <span class="text-danger">{{ $errors->first('pro_content') }}</span>

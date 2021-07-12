@@ -18,10 +18,7 @@ class Attribute extends Model
             'name' => 'Tác giả',
             'class' => 'label label-default' 
         ],
-        3 => [
-            'name' => 'Năm xuất bản',
-            'class' => 'label label-danger' 
-        ]
+      
     ];
 
     public function getType()
