@@ -50,10 +50,10 @@
                 <thead>
                     <tr>
                         <th scope="col">Mã đơn</th>
-                        <th scope="col">Name</th>
-                        <th scope="col">Total</th>
-                        <th scope="col">Time</th>
-                        <th scope="col">Status</th>
+                        <th scope="col">Tên</th>
+                        <th scope="col">Tổng tiền</th>
+                        <th scope="col">Ngày mua</th>
+                        <th scope="col">Trạng thái</th>
                        <!-- <th scope="col" style="text-align: center">Export</th>-->
                         <th scope="col" style="text-align: center">Action</th>
                     </tr>
@@ -102,7 +102,7 @@
         </div>
         <div class="footer">
             <a href="#" rel="modal:close" class="btn btn-pink ">Đóng</a>
-            <a href="" class="btn btn-purple js-export-pdf"> Export PDF</a>
+            <!--<a href="" class="btn btn-purple js-export-pdf"> Export PDF</a>-->
         </div>
     </div>
 @stop

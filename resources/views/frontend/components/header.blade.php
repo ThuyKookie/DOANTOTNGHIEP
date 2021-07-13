@@ -3,7 +3,7 @@
         <div class="content">
             <div class="left">
  {{--               <a href="{{ route('get.blog.home') }}" title="Tin Tức" rel="nofollow">Tin Tức</a>--}}
-                 <a href="{{ route('get.user.transaction') }}" title="Kiểm tra đơn hàng" rel="nofollow">Kiểm tra đơn hàng</a>
+   {{--              <a href="{{ route('get.user.transaction') }}" title="Kiểm tra đơn hàng" rel="nofollow">Kiểm tra đơn hàng</a>--}}
             </div>
             <div class="right">
                 @if (Auth::check())

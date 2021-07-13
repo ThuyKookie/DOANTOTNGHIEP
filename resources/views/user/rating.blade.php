@@ -18,9 +18,9 @@
                 <thead>
                     <tr>
                         <th scope="col" style="width: 50px">STT</th>
-                        <th scope="col" style="text-align: left;">Name</th>
-                        <th scope="col" style="text-align: center;">Rating</th>
-                        <th scope="col" style="text-align: center;">Time</th>
+                        <th scope="col" style="text-align: left;">Sản phẩm</th>
+                        <th scope="col" style="text-align: center;">Đánh giá</th>
+                        <th scope="col" style="text-align: center;">Ngày</th>
                         <th scope="col" style="text-align: center;">Action</th>
                     </tr>
                     </thead>

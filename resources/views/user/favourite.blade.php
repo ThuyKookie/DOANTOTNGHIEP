@@ -13,10 +13,10 @@
                     <thead>
                         <tr>
                             <th scope="col">Mã ĐH</th>
-                            <th class="w-25" scope="col">Name</th>
-                            <th scope="col">Category</th>
-                            <th scope="col">Avatar</th>
-                            <th scope="col">Price</th>
+                            <th class="w-25" scope="col">Sản phẩm</th>
+                            <th scope="col">Danh mục</th>
+                            <th scope="col">Anhr</th>
+                            <th scope="col">Giá</th>
                             <th scope="col" style="text-align: center">Action</th>
                         </tr>
                     </thead>

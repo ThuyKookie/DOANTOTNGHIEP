@@ -17,7 +17,7 @@ class BlogController extends BlogBaseController
         ])
         ->select('id','a_name','a_slug','a_description','a_avatar')
         ->orderByDesc('id')
-        ->paginate(10);
+        ->paginate(5);
 
 
         //Bài viết nổi bật trung tâm
