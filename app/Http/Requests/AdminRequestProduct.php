@@ -26,8 +26,19 @@ class AdminRequestProduct extends FormRequest
         return [
             'pro_name'          => 'required|max:190|min:3|unique:products,pro_name,'.$this->id,
             'pro_price'         => 'required',
+            'pro_number'        => 'required',
             'pro_category_id'   => 'required',
             'pro_content'       => 'required',
+        ];
+    }
+    public function messages()
+    {
+        return [
+            'pro_name.required'                => 'Dữ liệu không được để trống',
+            'pro_price.required'               => 'Dữ liệu không được để trống',
+            'pro_number.required'              => 'Dữ liệu không được để trống',
+            'pro_category_id.required'         => 'Dữ liệu không được để trống',
+            'pro_content.required'             => 'Dữ liệu không được để trống',
         ];
     }
 }

@@ -20,7 +20,7 @@ class AdminRequestSlide extends FormRequest
     {
         return [
             'sd_title'         => 'required',
-            'sd_link'          => 'required',
+            //'sd_link'          => 'required',
         ];
     }
 
@@ -28,7 +28,7 @@ class AdminRequestSlide extends FormRequest
     {
         return [
             'sd_title.required'         => 'Dữ liệu không được để trống',
-            'sd_link.required'         => 'Dữ liệu không được để trống',
+            //'sd_link.required'         => 'Dữ liệu không được để trống',
         ];
     }
 }

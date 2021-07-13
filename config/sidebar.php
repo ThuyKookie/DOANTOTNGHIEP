@@ -215,13 +215,13 @@ return [
 				'level'  => [1],
 				'icon'  => 'fa-circle-o'
 			],
-			[
-				'name'  => 'Chính sách',
-				'route' => 'admin.static.index',
-				'namespace' => 'pay-in',
-				'level'  => [1],
-				'icon'  => 'fa-circle-o'
-			],
+			//[
+			//	'name'  => 'Chính sách',
+			//	'route' => 'admin.static.index',
+			//	'namespace' => 'pay-in',
+			//	'level'  => [1],
+			//	'icon'  => 'fa-circle-o'
+			//],
 			[
 				'name'  => 'Thống kê',
 				'route' => 'admin.statistical',

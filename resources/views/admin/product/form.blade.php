@@ -17,7 +17,7 @@
                     <div class="col-sm-3">
                         <div class="form-group {{$errors->first('pro_price') ? 'has-error' : '' }}">
                             <label for="exampleInputEmail1">Giá sản phẩm <span class="text-danger">(*)</span></label>
-                             <input type="text" name="pro_price" required placeholder="{{  $product->pro_price ?? old('pro_price',0) }}" class="form-control" data-type="currency" placeholder="15.000.000">
+                             <input type="text" name="pro_price"  value="{{  $product->pro_price ?? old('pro_price',0) }}" class="form-control" data-type="currency" placeholder="15.000.000">
                              @if ($errors->first('pro_price'))
                                 <span class="text-danger">{{ $errors->first('pro_price') }}</span>
                             @endif
@@ -32,7 +32,7 @@
                     <div class="col-sm-3">
                         <div class="form-group {{$errors->first('pro_number') ? 'has-error' : '' }} ">
                             <label for="exampleInputEmail1">Số lượng <span class="text-danger">(*)</span></label>
-                            <input type="number" name="pro_number" required placeholder="{{  $product->pro_number ?? old('pro_number',0) }}" class="form-control"  placeholder="5">
+                            <input type="number" name="pro_number"  value="{{  $product->pro_number ?? old('pro_number',0) }}" class="form-control"  placeholder="5">
                         </div>
                     </div>
                    <!-- <div class="col-sm-3">
@@ -67,7 +67,7 @@
 
                 <div class="form-group {{$errors->first('pro_category_id') ? 'has-error' : '' }} ">
                     <label class="control-label">Danh mục<span class="text-danger">(*)</span></label>
-                    <select required placeholder="pro_category_id" class="form-control ">
+                    <select name="pro_category_id" class="form-control ">
                         <option value="">__Click__</option>
                         @foreach($categories as $category)
                             <option value="{{ $category->id }}" {{ ($product->pro_category_id ?? '') == $category->id ? "selected='selected'" : "" }}>
@@ -184,7 +184,7 @@
                     @endif
                 </div>-->
                 <div class="box-footer text-center">
-                    <a href="{{ route('admin.product.index') }}" class="btn btn-default"><i class="fa fa-arrow-left"></i> Cancel</a>
+                    <a href="{{ route('admin.menu.index') }}" class="btn btn-danger">Quay lại <i class="fa fa-undo"></i></a>
                     <button type="submit" class="btn btn-success"><i class="fa fa-save"></i> {{ isset($product) ? "Cập nhật" : "Thêm mới" }} </button> </div>
             </div>
         </div>

@@ -27,7 +27,7 @@
                                     <th>Tên danh mục</th>
                                    <!-- <th>Ảnh</th>-->
                                     <th>Trạng thái</th>
-                                    <th>Nổi bật</th>
+                                  <!--  <th>Nổi bật</th>-->
                                     <th>Ngày tạo</th>
                                     <th>Action</th> 
                                 </tr>
@@ -40,18 +40,18 @@
                                            <!-- <td>
                                                 <img src="{{ pare_url_file($menu->mn_avatar) }}" style="width: 80px;height: 80px;">
                                             </td>-->
-                                            <td>
+                                           <!-- <td>
                                                 @if ($menu->mn_status == 1)
                                                     <a href="{{ route('admin.menu.active', $menu->id) }}" class="label label-info">Show</a>
                                                 @else 
                                                     <a href="{{ route('admin.menu.active', $menu->id) }}" class="label label-default">Hide</a>
                                                 @endif
-                                            </td>
+                                            </td>-->
                                             <td>
                                                 @if ($menu->mn_hot == 1)
-                                                    <a href="{{ route('admin.menu.hot', $menu->id) }}" class="label label-info">Hot</a>
+                                                    <a href="{{ route('admin.menu.hot', $menu->id) }}" class="label label-info">Hiển thị</a>
                                                 @else 
-                                                    <a href="{{ route('admin.menu.hot', $menu->id) }}" class="label label-default">None</a>
+                                                    <a href="{{ route('admin.menu.hot', $menu->id) }}" class="label label-default">Không</a>
                                                 @endif
                                             </td>
                                             <td>{{  $menu->created_at }}</td>

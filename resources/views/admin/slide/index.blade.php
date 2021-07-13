@@ -24,11 +24,12 @@
                                 <tr>
                                     <th style="width: 10px">STT</th>
                                     <th style="width: 10px">ID</th>
-                                    <th>Name</th>
-                                    <th>Status</th>
-                                    <th>Sort</th>
-                                    <th>Target</th>
-                                    <th>Time</th>
+                                    <th>Tên</th>
+                                    <th>Ảnh</th>
+                                    <th>Trạng thái</th>
+                                   <!-- <th>Sort</th>
+                                    <th>Target</th>-->
+                                    <th>Ngày tạo</th>
                                     <th>Action</th>
                                 </tr>
                                 @if (isset($slides))
@@ -38,14 +39,17 @@
                                             <td>{{ $slide->id }}</td>
                                             <td>{{ $slide->sd_title }}</td>
                                             <td>
+                                                <img src="{{ pare_url_file($slide->sd_image) }}" style="width: 100px;height: 40px">
+                                            </td>
+                                            <td>
                                                 @if ($slide->sd_active == 1)
                                                     <a href="{{ route('admin.slide.active', $slide->id) }}" class="label label-info">Show</a>
                                                 @else 
                                                     <a href="{{ route('admin.slide.active', $slide->id) }}" class="label label-default">Hide</a>
                                                 @endif
                                             </td>
-                                            <td>{{  $slide->sd_sort }}</td>
-                                            <td>{{  $slide->sd_target }}</td>
+                                           <!-- <td>{{  $slide->sd_sort }}</td>
+                                            <td>{{  $slide->sd_target }}</td>-->
                                             <td>{{  $slide->created_at }}</td>
                                             <td>
                                                 <a href="{{ route('admin.slide.update', $slide->id) }}" class="btn btn-xs btn-primary"><i class="fa fa-pencil"></i> Edit</a>

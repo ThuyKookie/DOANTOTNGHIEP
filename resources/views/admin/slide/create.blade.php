@@ -19,14 +19,14 @@
                          @csrf
                         <div class="col-sm-8">
                             <div class="form-group {{ $errors->first('sd_title') ? 'has-error' : '' }}">
-                                <label for="name">Title <span class="text-danger">(*)</span></label>
+                                <label for="name">Tên <span class="text-danger">(*)</span></label>
                                 <input type="text" class="form-control" name="sd_title"  placeholder="Name ...">
                                 @if ($errors->first('sd_title'))
                                     <span class="text-danger">{{ $errors->first('sd_title') }}</span>
                                 @endif
                             </div>
                         </div>
-                        <div class="col-sm-8">
+                       <!-- <div class="col-sm-8">
                             <div class="form-group {{ $errors->first('sd_link') ? 'has-error' : '' }}">
                                 <label for="name">Link <span class="text-danger">(*)</span></label>
                                 <input type="text" class="form-control" name="sd_link"  placeholder="Link ...">
@@ -58,10 +58,10 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div>-->
                         <div class="col-sm-8">
 
-                            <h3 class="box-title">Banner</h3>
+                            <label for="name">Banner<span class="text-danger">(*)</span></label>
                             <div class="box-body block-images">
                                 <div style="margin-bottom: 10px"> <img src="/images/no-image.jpg" onerror="this.onerror=null;this.src='/images/no-image.jpg';" alt="" class="img-thumbnail" style="width: 100%;height: 400px;"> </div>
                                 <div style="position:relative;"> <a class="btn btn-primary" href="javascript:;"> Choose File... <input type="file" style="position:absolute;z-index:2;top:0;left:0;filter: alpha(opacity=0);-ms-filter:&quot;progid:DXImageTransform.Microsoft.Alpha(Opacity=0)&quot;;opacity:0;background-color:transparent;color:transparent;" name="sd_avatar" size="40" class="js-upload"> </a> &nbsp; <span class="label label-info" id="upload-file-info"></span> </div>

@@ -85,7 +85,7 @@
     </div>
     <div class="col-sm-12 clearfix">
         <div class="box-footer text-center"> 
-            <a href="{{ route('admin.article.index') }}" class="btn btn-default"><i class="fa fa-arrow-left"></i> Cancel</a> 
+        <a href="{{ route('admin.menu.index') }}" class="btn btn-danger">Quay lại <i class="fa fa-undo"></i></a>
             <button type="submit" class="btn btn-success"><i class="fa fa-save"></i> {{ isset($article) ? "Cập nhật" : "Thêm mới" }} </button> </div>
     </div>
 </form>

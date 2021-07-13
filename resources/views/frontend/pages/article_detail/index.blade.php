@@ -25,7 +25,7 @@
                     <div class="post-detail__content">
                         {!! $article->a_content !!}
                     </div>
-                    <div class="post-detail_suggest" style="margin: 10px 0">
+                    <!--<div class="post-detail_suggest" style="margin: 10px 0">
                         <h3 >Bài viết liên quan</h3>
                         <ul>
                             @foreach($articleSuggest as $key => $item)
@@ -34,7 +34,7 @@
                             </li>
                             @endforeach
                         </ul>
-                    </div>
+                    </div>-->
                 </div>
             </div>
             <div class="right">
