@@ -16,14 +16,14 @@
         <div class="col-md-3">
             <div class="form-group">
                 <label for="exampleInputEmail1">Từ ngày: </label>
-                <input type="date" class="form-control" id="datatime1" name="datatime1">
+                <input type="date" class="form-control" value="{{date('Y-m-d', strtotime($day1 ?? date('Y-m-d')))}}"id="datatime1" name="datatime1">
                 <small id="emailHelp" class="form-text text-muted">Hãy chọn ngày bắt đầu</small>
             </div>
         </div>
         <div class="col-md-3">
             <div class="form-group">
                 <label for="exampleInputEmail1">Đến ngày: </label>
-                <input type="date" class="form-control" id="datatime2" name="datatime2">
+                <input type="date" class="form-control" value="{{ date('Y-m-d', strtotime($day2 ?? date('Y-m-d')))}}" id="datatime2" name="datatime2">
                 <small id="emailHelp" class="form-text text-muted">Hãy chọn ngày kết thúc</small>
             </div>
         </div>

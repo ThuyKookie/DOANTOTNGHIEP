@@ -35,12 +35,12 @@
         </div>
     </form>
     <div class="col-md-3 mt-3" >
-        <form action="{{  route('admin.transaction.exportTransaction') }}" method="post">
+        <!--<form action="{{  route('admin.transaction.exportTransaction') }}" method="post">
             @csrf
             <input type="date" class="form-control" id="datatime1a" name="datatime1a">
             <input type="date" class="form-control" id="datatime2a" name="datatime2a">
             <button type="submit" class="btn btn-primary align-self-center">Xuất Báo Cáo</button>
-        </form>
+        </form>-->
             <!-- <div style="height: 50px; margin: 25px;" >
             <a href="{{  route('admin.inventory.exportInven') }}" class="btn btn-primary align-self-center">Xuất Báo Cáo</a>
             </div> -->

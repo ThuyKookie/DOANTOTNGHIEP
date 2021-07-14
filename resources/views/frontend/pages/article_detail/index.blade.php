@@ -10,7 +10,7 @@
                     <a href="/" title="Home"><span itemprop="title">Trang chủ</span></a>
                 </li>
                 <li >
-                    <a href="{{  route('get.blog.home') }}" title="Bài viết"><span itemprop="title">Blog</span></a>
+                    <a href="{{  route('get.blog.home') }}" title="Bài viết"><span itemprop="title">Bài viết</span></a>
                 </li>
                 <li >
                     <a href="javascript://" title="Bài viết"><span itemprop="title">{{  $article->a_name }}</span></a>

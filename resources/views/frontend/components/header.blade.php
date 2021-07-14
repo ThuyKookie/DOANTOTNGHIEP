@@ -2,7 +2,7 @@
     <div class="container">
         <div class="content">
             <div class="left">
- {{--               <a href="{{ route('get.blog.home') }}" title="Tin Tức" rel="nofollow">Tin Tức</a>--}}
+ {{--               <a href="{{ route('get.blog.home') }}" title="Tin Tức" rel="nofollow">Blog</a>--}}
    {{--              <a href="{{ route('get.user.transaction') }}" title="Kiểm tra đơn hàng" rel="nofollow">Kiểm tra đơn hàng</a>--}}
             </div>
             <div class="right">
@@ -60,8 +60,8 @@
             
             <ul class="right">
             <li>
-                <a href="{{ route('get.blog.home') }}" title="Tin tức">
-                <span class = "text">Tin tức</span>
+                <a href="{{ route('get.blog.home') }}" title="Bài viết">
+                <span class = "text">Bài viết</span>
                 </a>
             </li>
             </ul>

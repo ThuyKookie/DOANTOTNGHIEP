@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Trang quảng trị hệ thống</title>
+        <title>Trang quản trị hệ thống</title>
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
         <!-- Tell the browser to be responsive to screen width -->
         <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">

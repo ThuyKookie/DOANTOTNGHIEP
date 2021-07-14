@@ -214,6 +214,8 @@ class AdminInventoryController extends Controller
         ->paginate(20);
 
         $viewData = [
+            'day1' => $day1 ?  $day1 : Carbon::now()->toDateTimeString(),
+            'day2' => $day2 ? $day2->subDays(1) :  Carbon::now(),
             'inventoryExport' => $inventoryExport,
             'query' => $request->query()
         ];

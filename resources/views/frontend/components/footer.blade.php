@@ -20,7 +20,7 @@
                     </ul>
                 </div>
                 <div class="item">
-                    <div class="title">Tin tức</div>
+                    <div class="title">Bài viết</div>
                     <ul>
                         @if (isset($menus))
                             @foreach($menus as $menu)

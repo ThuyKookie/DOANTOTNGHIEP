@@ -92,13 +92,13 @@
                                     @php
                                         $ok = "bg-light";
                                         if($product->pro_number == 0){
-                                            $ok = " bg-danger";
+                                            $ok = " bg-danger ";
                                         }
                                         if($product->pro_number > 0 && $product->pro_number <= 5){
-                                            $ok = "bg-warning ";
+                                            $ok = "bg-info ";
                                         }
                                         if($product->pro_number > 5 && $product->pro_number <= 10){
-                                            $ok = "bg-info";
+                                            $ok = "bg-warning";
                                         } 
                                     @endphp
                                         <tr class="{{$ok}}">
